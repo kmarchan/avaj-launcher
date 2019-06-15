@@ -29,4 +29,10 @@ public class Coordinates {
     public void setLatitude(int latitude) {
         this.latitude = latitude;
     }
+
+    Coordinates coordinates(int longitude, int latitude, int height) {
+
+        return ;
+    }
 }
+6
