@@ -1,7 +1,7 @@
 package AirTrafficControl;
 
 public class Tower {
-    private observers flyable;
+    private Flyable flyable;
 
     public void register(Flyable flyable) {
 

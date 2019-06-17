@@ -32,7 +32,6 @@ public class Coordinates {
 
     Coordinates coordinates(int longitude, int latitude, int height) {
 
-        return ;
+        return null;
     }
 }
-6
