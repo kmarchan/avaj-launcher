@@ -1,13 +1,13 @@
 package Hanger;
 
-import AirTrafficControl.Coordinates;
+import AirTrafficControl.Flyable;
 import AirTrafficControl.WeatherTower;
 
-public class Baloon {
+public class Balloon extends Aircraft implements Flyable {
     private WeatherTower weatherTower;
 
-    Baloon(String name, Coordinates coordinates) {
-
+    Balloon(String name, Coordinates coordinates) {
+        new Aircraft(name, coordinates);
     }
     public void updateConditions() {
 

@@ -1,13 +1,14 @@
 package Hanger;
 
-import AirTrafficControl.Coordinates;
-
 public class Aircraft {
 
     protected int id;
     protected String name;
     protected Coordinates coordinates;
     private long idCounter;
+
+    protected Aircraft() {
+    }
 
     public String getName() {
         return name;

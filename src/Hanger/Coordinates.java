@@ -1,4 +1,4 @@
-package AirTrafficControl;
+package Hanger;
 
 public class Coordinates {
     private int longitude;
@@ -30,8 +30,9 @@ public class Coordinates {
         this.latitude = latitude;
     }
 
-    Coordinates coordinates(int longitude, int latitude, int height) {
-
-        return null;
+    Coordinates(int longitude, int latitude, int height) {
+        this.setLongitude(longitude);
+        this.setLatitude(latitude);
+        this.setHeight(height);
     }
 }

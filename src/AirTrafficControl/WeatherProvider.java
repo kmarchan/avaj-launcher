@@ -1,5 +1,7 @@
 package AirTrafficControl;
 
+import Hanger.Coordinates;
+
 public class WeatherProvider {
     private WeatherProvider weatherProvider;
     private String weather;

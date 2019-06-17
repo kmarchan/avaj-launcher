@@ -1,10 +1,13 @@
 package AirTrafficControl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tower {
-    private Flyable flyable;
+    private List<Flyable> observers = new ArrayList<Flyable>();
 
     public void register(Flyable flyable) {
-
+        this.observers.add(flyable);
     }
 
     public void unregister(Flyable flyable) {
