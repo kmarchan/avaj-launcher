@@ -39,6 +39,7 @@ public class Main {
 	}
 }
 
+// run in terminal
 // javac -sourcepath @sources.txt
 // java Main.java scenario.txt
 // java Main.java scenario.txt
