@@ -7,6 +7,7 @@ public class Tower {
     private List<Flyable> observers = new ArrayList<Flyable>();
 
     public void register(Flyable flyable) {
+
         this.observers.add(flyable);
     }
 

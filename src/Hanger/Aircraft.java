@@ -2,13 +2,10 @@ package Hanger;
 
 public class Aircraft {
 
-    protected int id;
+    protected long id;
     protected String name;
     protected Coordinates coordinates;
-    private long idCounter;
-
-    protected Aircraft() {
-    }
+    private static long idCounter;
 
     public String getName() {
         return name;
@@ -26,17 +23,14 @@ public class Aircraft {
         this.coordinates = coordinates;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     protected Aircraft(String name, Coordinates coordinates) {
         this.setName(name);
         this.setCoordinates(coordinates);
+        this.id = nextId();
     }
 
     public long nextId() {
