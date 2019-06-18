@@ -1,4 +1,4 @@
-./Main.java
+./AirTrafficControl/AirTrafficControl.Main.java
 ./AirTrafficControl/Tower.java
 ./AirTrafficControl/WeatherTower.java
 ./AirTrafficControl/Flyable.java

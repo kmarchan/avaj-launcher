@@ -1,15 +1,16 @@
-import AirTrafficControl.Tower;
-import AirTrafficControl.WeatherTower;
+package AirTrafficControl;
+
 import Hanger.AircraftFactory;
 import SimulationException.InputException;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) throws InputException {
+	public static void main(String[] args) throws InputException, FileNotFoundException, UnsupportedEncodingException {
 
 		if (args.length != 1) { throw new InputException ("This program will take one and only one argument");}
 		File file = new File(args[0]);
@@ -21,7 +22,7 @@ public class Main {
 		}
 
 		AircraftFactory factory = new AircraftFactory();
-		WeatherTower wtower = new WeatherTower();
+		WeatherTower wTower = new WeatherTower();
 
 		String type;
 		String name;
@@ -35,12 +36,13 @@ public class Main {
 			lng = sc.nextInt();
 			lat = sc.nextInt();
 			height = sc.nextInt();
-			factory.newAircraft(type, name, lng, lat, height).registerTower(wtower);
+			if (height <= 0) {throw new InputException("The " + type + ", " + name + " is grounded at height of " + height);}
+			factory.newAircraft(type, name, lng, lat, height).registerTower(wTower);
 		}
 	}
 }
 
 // run in terminal
+// find -name "*.java" > sources.txt
 // javac -sourcepath @sources.txt
-// java Main.java scenario.txt
-// java Main.java scenario.txt
+// java AirTrafficControl.Main.java scenario.txt
