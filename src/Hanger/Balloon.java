@@ -1,6 +1,7 @@
 package Hanger;
 
 import AirTrafficControl.Flyable;
+import AirTrafficControl.SimulationReport;
 import AirTrafficControl.WeatherTower;
 
 public class Balloon extends Aircraft implements Flyable {
@@ -15,5 +16,6 @@ public class Balloon extends Aircraft implements Flyable {
     public void registerTower(WeatherTower weatherTower) {
         weatherTower.register(this);
         this.weatherTower = weatherTower;
+        SimulationReport.addRegistration("Balloon#" +this.name + "(" + this.id + ")");
     }
 }

@@ -5,6 +5,7 @@ import SimulationException.InputException;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
 
@@ -39,6 +40,11 @@ public class Main {
 			if (height <= 0) {throw new InputException("The " + type + ", " + name + " is grounded at height of " + height);}
 			factory.newAircraft(type, name, lng, lat, height).registerTower(wTower);
 		}
+		PrintWriter writer = new PrintWriter("simulation.txt", "UTF-8");
+		for (int i = 0; i < SimulationReport.report.size(); i ++ ) {
+			writer.println(SimulationReport.report.get(i));
+		}
+		writer.close();
 	}
 }
 
