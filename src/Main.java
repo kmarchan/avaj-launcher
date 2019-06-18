@@ -1,4 +1,5 @@
 import AirTrafficControl.Tower;
+import AirTrafficControl.WeatherTower;
 import Hanger.AircraftFactory;
 import SimulationException.InputException;
 
@@ -20,7 +21,7 @@ public class Main {
 		}
 
 		AircraftFactory factory = new AircraftFactory();
-		Tower tower = new Tower();
+		WeatherTower wtower = new WeatherTower();
 
 		String type;
 		String name;
@@ -34,7 +35,7 @@ public class Main {
 			lng = sc.nextInt();
 			lat = sc.nextInt();
 			height = sc.nextInt();
-			tower.register(factory.newAircraft(type, name, lng, lat, height));
+			factory.newAircraft(type, name, lng, lat, height).registerTower(wtower);
 		}
 	}
 }
