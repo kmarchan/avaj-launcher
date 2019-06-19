@@ -1,0 +1,6 @@
+Tower says: Helicopter#H1(0) registered to weather tower.
+Helicopter#H1(0): My rotor is going to freeze!
+Helicopter#H1(0): My rotor is going to freeze!
+Helicopter#H1(0)landing
+Tower says: Helicopter#H1(0) unregistered to weather tower.
+Landed at: 33 654 0
