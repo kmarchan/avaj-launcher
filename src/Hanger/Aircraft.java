@@ -7,24 +7,12 @@ public class Aircraft {
     protected Coordinates coordinates;
     private static long idCounter;
 
-    public String getName() {
-        return name;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
 
-    public Coordinates getCoordinates() {
-        return coordinates;
-    }
-
     public void setCoordinates(Coordinates coordinates) {
         this.coordinates = coordinates;
-    }
-
-    public long getId() {
-        return id;
     }
 
     protected Aircraft(String name, Coordinates coordinates) {
