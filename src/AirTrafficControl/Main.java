@@ -30,7 +30,8 @@ public class Main {
 		int lng;
 		int lat;
 		int height;
-		int repeat = sc.nextInt();
+		int repeat;
+		repeat = sc.nextInt();
 		while (sc.hasNext()) {
 			type = sc.next();
 			name = sc.next();
@@ -40,9 +41,14 @@ public class Main {
 			if (height <= 0) {throw new InputException("The " + type + ", " + name + " is grounded at height of " + height);}
 			factory.newAircraft(type, name, lng, lat, height).registerTower(wTower);
 		}
+		int i = 0;
+		while (i < repeat){
+			wTower.changeWeather();
+			i++;
+		}
 		PrintWriter writer = new PrintWriter("simulation.txt", "UTF-8");
-		for (int i = 0; i < SimulationReport.report.size(); i ++ ) {
-			writer.println(SimulationReport.report.get(i));
+		for (int p = 0; p < SimulationReport.report.size(); p ++ ) {
+			writer.println(SimulationReport.report.get(p));
 		}
 		writer.close();
 	}

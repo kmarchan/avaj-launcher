@@ -3,19 +3,32 @@ package AirTrafficControl;
 import Hanger.Coordinates;
 
 public class WeatherProvider {
-    private WeatherProvider weatherProvider;
-    private String weather;
+    private static WeatherProvider weatherProvider = new WeatherProvider();
+    private String[] weather = {"SUN", "FOG", "RAIN", "SNOW"};
 
-    private void WeatherProvider() {
-
+    private  WeatherProvider() {
     }
 
-    public WeatherProvider getProvider() {
-        return this.weatherProvider;
+    public static WeatherProvider getProvider() {
+        return weatherProvider;
     }
 
     public String getCurrentWeather(Coordinates coordinates) {
-        return this.weather;
-    }
+        int height = coordinates.getHeight();
+        int lat = coordinates.getLatitude();
+        int lng = coordinates.getLongitude();
 
+        if (height > 95) {return weather[0];}
+        int pos = height + lat + lng % 4;
+        switch (pos) {
+            case 0:
+                return weather[0];
+            case 1:
+                return weather[1];
+            case 2:
+                return weather[2];
+            default:
+                return weather[3];
+        }
+    }
 }

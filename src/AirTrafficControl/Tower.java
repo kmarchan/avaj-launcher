@@ -11,10 +11,12 @@ public class Tower {
     }
 
     public void unregister(Flyable flyable) {
-
+        // TODO -- build this
     }
 
     protected void conditionsChanged() {
-
+        for(int i = 0; i < observers.size(); i++) {
+            observers.get(i).updateConditions();
+        }
     }
 }

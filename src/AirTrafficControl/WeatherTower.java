@@ -4,9 +4,10 @@ import Hanger.Coordinates;
 
 public class WeatherTower extends Tower{
     public String getWeather(Coordinates coordinates) {
-        return "string";
+        return (WeatherProvider.getProvider().getCurrentWeather(coordinates));
     }
-    void changeWeather() {
 
+    void changeWeather() {
+        this.conditionsChanged();
     }
 }
