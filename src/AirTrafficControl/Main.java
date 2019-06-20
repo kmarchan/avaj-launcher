@@ -54,7 +54,7 @@ public class Main {
 	}
 }
 
-// run in terminal
-// find -name "*.java" > sources.txt
-// javac -sourcepath @sources.txt
+// run in terminal - remove "." to run in Ubuntu
+// find . -name "*.java" > sources.txt
+// javac -sourcepath . @sources.txt
 // java AirTrafficControl.Main.java scenario.txt

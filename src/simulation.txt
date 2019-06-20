@@ -1,0 +1,40 @@
+Tower says: Balloon#B1(0) registered to weather tower.
+Tower says: Balloon#B2(1) registered to weather tower.
+Tower says: JetPlane#J1(2) registered to weather tower.
+Tower says: Helicopter#H1(3) registered to weather tower.
+Tower says: Helicopter#H2(4) registered to weather tower.
+Tower says: Helicopter#H3(5) registered to weather tower.
+Tower says: Balloon#B3(6) registered to weather tower.
+Tower says: JetPlane#J2(7) registered to weather tower.
+Tower says: Helicopter#H4(8) registered to weather tower.
+Tower says: Helicopter#H4(9) registered to weather tower.
+Balloon#B1(0): Too cold! going down!
+Balloon#B2(1): Too cold! going down!
+JetPlane#J1(2): OMG! Winter is coming!
+Helicopter#H1(3): My rotor is going to freeze!
+Helicopter#H2(4): My rotor is going to freeze!
+Helicopter#H3(5): This is hot
+Helicopter#H3(5): I hate the rain!
+Helicopter#H3(5): Flying blind here!
+Helicopter#H3(5): My rotor is going to freeze!
+Balloon#B3(6): Too cold! going down!
+JetPlane#J2(7): Beautiful day for flying, would you care for more mimosa?
+JetPlane#J2(7): It's raining. Better watch out for lighting.
+JetPlane#J2(7): Relying on my autopilot
+JetPlane#J2(7): OMG! Winter is coming!
+Helicopter#H4(8): My rotor is going to freeze!
+Helicopter#H4(9): My rotor is going to freeze!
+Balloon#B1(0): Too cold! going down!
+Landed at: 3 2 0
+Balloon#B1(0)landing
+Tower says: Balloon#B1(0) unregistered to weather tower.
+JetPlane#J1(2): OMG! Winter is coming!
+Helicopter#H1(3): My rotor is going to freeze!
+Helicopter#H1(3)landing
+Tower says: Helicopter#H1(3) unregistered to weather tower.
+Landed at: 33 654 0
+Helicopter#H3(5): My rotor is going to freeze!
+Balloon#B3(6): Too cold! going down!
+JetPlane#J2(7): OMG! Winter is coming!
+Helicopter#H4(8): My rotor is going to freeze!
+Helicopter#H4(9): My rotor is going to freeze!
